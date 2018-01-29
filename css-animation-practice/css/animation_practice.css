@@ -45,24 +45,24 @@ html,body {
     display: inline-block;
     position: relative;
     animation: color_shift 2s;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
 #m {
     animation: m_move 2s, color_shift 2s;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
 #e {
     animation: e_move 2s, color_shift 2s;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
 #l {
     animation: l_move 2s, color_shift 2s;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
