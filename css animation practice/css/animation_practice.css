@@ -1,0 +1,68 @@
+/* this is where all of your CSS styles go */
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+#grid_container {
+	width: 400px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 45%; /* for optical centering */
+	margin-top: -50px;
+    margin-left: -200px;
+    text-align: center;
+}
+
+@keyframes m_move {
+    0% { left: 0; }
+    100% { left: 100px; }
+}
+
+@keyframes e_move {
+    0% { left: 0; }
+    100% { left: -25px; }
+}
+
+@keyframes l_move {
+    0% { left: 0; }
+    100% { left: -115px; }
+}
+
+@keyframes color_shift {
+    0% { color: rgb(110, 228, 106); text-shadow: 4px 4px rgb(158, 65, 81);}
+    100% { color: yellow; text-shadow: 4px 4px black; }
+}
+
+.mono {
+    font-family: 'Fjalla One';
+    color: rgb(110, 228, 106); 
+    text-shadow: 4px 4px rgb(158, 65, 81);
+	font-size: 6em;
+    margin-left: 5px;
+    display: inline-block;
+    position: relative;
+    animation: color_shift 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#m {
+    animation: m_move 2s, color_shift 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#e {
+    animation: e_move 2s, color_shift 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#l {
+    animation: l_move 2s, color_shift 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
