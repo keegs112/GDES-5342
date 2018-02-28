@@ -41,7 +41,7 @@ html,body {
 .container .secondary {
     font-family: Lato;
     width: 30%;
-    font-size: 30px;
+    font-size: 26px;
     text-shadow: 0 2px 5px #000000b7;
     position: relative;
     line-height: 1.2;
@@ -75,7 +75,7 @@ html,body {
 .donate a:hover {
     color: white;
     text-decoration: none;
-    text-shadow: 0 0 3px #ffffff;
+    text-shadow: 0 0 4px #ffffffd8;
 }
 
 /* Animations */
@@ -191,7 +191,11 @@ html,body {
 
 /* Static Positioning */
 
-#clean, #contaminated, #sanitation {
+#clean {
+    bottom: -50px;
+}
+
+#contaminated, #sanitation {
     bottom: -40px;
 }
 .donate {
