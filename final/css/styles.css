@@ -174,7 +174,7 @@ body {
   max-width: 600px;
   margin-left: 50%;
   margin-right: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   margin-top: 80px;
   font-size: 24px;
   line-height: 1.8;
@@ -185,5 +185,6 @@ body {
   color: white;
   font-size: 64px;
   font-weight: bold;
-  margin: 40px 100px 100px;
+  line-height: 1.2;
+  margin: 40px 100px 300px;
 }
