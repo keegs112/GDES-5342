@@ -20,11 +20,14 @@ $(document).ready(function() {
     });
 
     $('.grid-item').click(function() {
+        $(".window.glass").animate({top: "100%"}, 10 );
         $('.window.glass').removeClass('hidden');
+        $(".window.glass").animate({top: "0%"}, 100);
         window.scrollTo(0,0);
     });
 
     $('.exit').click(function() {
+        window.scrollTo(0,0);
         $('.window').addClass('hidden');
     });
 });
