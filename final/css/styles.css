@@ -5,6 +5,24 @@ body {
   font-family: 'Nunito Sans', sans-serif; 
 }
 
+.window {
+  width: 100%;
+  min-height: 100%;
+  background: #353539;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.image-container {
+  line-height: 0;
+  margin-left: -80px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
 .sidenav {
   height: 100%;
   width: 180px;
