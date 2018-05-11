@@ -5,24 +5,6 @@ body {
   font-family: 'Nunito Sans', sans-serif; 
 }
 
-.window {
-  width: 100%;
-  min-height: 100%;
-  background: #353539;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.image-container {
-  line-height: 0;
-  margin-left: -80px;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-
 .sidenav {
   height: 100%;
   width: 180px;
@@ -35,23 +17,32 @@ body {
   padding: 20px;
 }
 
-.sidenav a:active {
+.title {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 80px;
+  border-bottom: solid 2px transparent;
+}
+
+.sidenav title:active {
   text-decoration: underline;
   text-decoration-color: #D26;
 }
 
-.sidenav .btn:active {
+.sidenav .menu:active {
   border-bottom: solid 2px #D26;
 }
 
-.btn {
+.menu {
   color: white;
   margin: 50px 0;
   margin-right: -20px;
   border-bottom: solid 2px transparent;
 }
 
-.btn:hover {
+.menu:hover {
   color: rgba(255, 255, 255, 0.726);
 }
 
@@ -63,13 +54,6 @@ body {
   display: none;
 }
 
-.title {
-  color: white;
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 80px;
-}
 
 .title-secondary {
   color: white;
@@ -147,4 +131,59 @@ body {
 
 .grid-item:hover .hidden {
   display: block;
+}
+
+/* ---- article ---- */
+
+.window {
+  width: 100%;
+  min-height: 100%;
+  background: #353539;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.exit {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  right: 80px;
+  top: 40px;
+}
+
+.exit:hover {
+  color: rgba(255, 255, 255, 0.726);
+}
+
+.image-container {
+  line-height: 0;
+  margin-left: -80px;
+  z-index: -1;
+}
+
+.article {
+  position: absolute;
+  width: 100%;
+}
+
+.article p {
+  color: white;
+  max-width: 600px;
+  margin-left: 50%;
+  margin-right: 40px;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  font-size: 24px;
+  line-height: 1.8;
+}
+
+.article-title {
+  max-width: 400px;
+  color: white;
+  font-size: 64px;
+  font-weight: bold;
+  margin: 40px 100px 100px;
 }
